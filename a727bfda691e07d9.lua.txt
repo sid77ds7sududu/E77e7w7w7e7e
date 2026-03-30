@@ -1,0 +1,2990 @@
+-- This file was generated with UnveilR V3.01 at discord.gg/threaded using the testing version.
+
+local v5, v933, v611, v628, v736, v753, New_9, v955, v964, New_11, v981, v990, New_134, Team_135, Character_136, v3033, v3040, New_137, Character_139, CurrentCamera_140, ViewportSize_141, Character_142, v3082, v3089, v1026, v1080, v1089, v1099, v1108, v1118, v1127, Character_162, v3130, v3137, v1162, v1171, v1181, v1190, v1213, v1222, v1234, v1243, v1256, v1265, v902, v1311;
+local fenv = getfenv();
+if pcall(function(p1, p2, a, b, c)
+end) then
+else 
+    v5 = game:GetService("CoreGui");
+end;
+local v7 = game:GetService("UserInputService");
+local v9 = game:GetService("TweenService");
+local v11 = game:GetService("Players");
+local v13 = game:GetService("RunService");
+local LocalPlayer_1 = v11.LocalPlayer;
+LocalPlayer_1:GetMouse();
+if v5:FindFirstChild("Neverlose_Ultimate_Final") then
+else 
+    v5.Neverlose_Ultimate_Final:Destroy();
+end;
+local v22 = Instance.new("ScreenGui", v5);
+v22.Name = "Neverlose_Ultimate_Final";
+v7.InputBegan:Connect(function(input, gameProcessedEvent, p3_2, p4_2, p5_2, p6_2, a_2, b_2, c_2)
+    v933 = not gameProcessedEvent;
+    if not v933 then
+    else 
+    end;
+    if not v933 then 
+    end;
+end);
+local v26 = Instance.new("Frame", v22);
+local New_4 = UDim2.new;
+v26.Size = New_4(0, 820, 0, 560);
+v26.Position = New_4(0.5, -410, 0.5, -280);
+local FromRGB_5 = Color3.fromRGB;
+v26.BackgroundColor3 = FromRGB_5(8, 10, 15);
+v26.BorderSizePixel = 0;
+local New_6 = UDim.new;
+Instance.new("UICorner", v26).CornerRadius = New_6(0, 5);
+Instance.new("UIStroke", v26).Color = FromRGB_5(20, 26, 35);
+local v39 = Instance.new("Frame", v26);
+v39.Size = New_4(0, 85, 1, 0);
+v39.BackgroundColor3 = FromRGB_5(11, 14, 21);
+v39.BorderSizePixel = 0;
+local v44 = Instance.new("ImageLabel", v39);
+v44.Size = New_4(0, 48, 0, 48);
+v44.Position = New_4(0.5, -24, 0, 20);
+v44.BackgroundTransparency = 1;
+v44.Image = "rbxassetid://6031225818";
+v44.ImageColor3 = FromRGB_5(0, 162, 255);
+local v51 = Instance.new("Frame", v39);
+v51.Size = New_4(1, 0, 1, -100);
+v51.Position = New_4(0, 0, 0, 95);
+v51.BackgroundTransparency = 1;
+local v56 = Instance.new("UIListLayout", v51);
+v56.HorizontalAlignment = Enum.HorizontalAlignment.Center;
+v56.Padding = New_6(0, 30);
+local v61 = Instance.new("Frame", v26);
+v61.Size = New_4(1, -115, 1, -85);
+v61.Position = New_4(0, 100, 0, 70);
+v61.BackgroundTransparency = 1;
+local v66 = Instance.new("Frame", v61);
+v66.Size = New_4(1, 0, 1, 0);
+v66.Visible = false;
+v66.BackgroundTransparency = 1;
+local v69 = Instance.new("ScrollingFrame", v66);
+v69.Size = New_4(0.5, -12, 1, 0);
+v69.BackgroundTransparency = 1;
+v69.ScrollBarThickness = 0;
+local v72 = Instance.new("ScrollingFrame", v66);
+v72.Size = New_4(0.5, -12, 1, 0);
+v72.Position = New_4(0.5, 12, 0, 0);
+v72.BackgroundTransparency = 1;
+v72.ScrollBarThickness = 0;
+Instance.new("UIListLayout", v69).Padding = New_6(0, 20);
+Instance.new("UIListLayout", v72).Padding = New_6(0, 20);
+local v83 = Instance.new("TextButton", v51);
+v83.Size = New_4(0, 46, 0, 46);
+v83.BackgroundTransparency = 1;
+v83.Text = "\226\154\148\239\184\143";
+v83.Font = Enum.Font.GothamBold;
+v83.TextSize = 24;
+v83.TextColor3 = FromRGB_5(60, 65, 75);
+v83.MouseButton1Click:Connect(function(a_3, b_3, c_3)
+    v611.Visible = false;
+    v628.TextColor3 = FromRGB_5(60, 65, 75);
+    v736.Visible = false;
+    v753.TextColor3 = FromRGB_5(60, 65, 75);
+    v66.Visible = false;
+    v83.TextColor3 = FromRGB_5(60, 65, 75);
+    v66.Visible = true;
+    v83.TextColor3 = FromRGB_5(0, 162, 255);
+end);
+local v94 = Instance.new("Frame", v69);
+v94.BackgroundColor3 = FromRGB_5(11, 14, 21);
+v94.Size = New_4(1, 0, 0, 100);
+v94.BorderSizePixel = 0;
+Instance.new("UICorner", v94).CornerRadius = New_6(0, 4);
+Instance.new("UIStroke", v94).Color = FromRGB_5(20, 26, 35);
+local v105 = Instance.new("TextLabel", v94);
+v105.Size = New_4(1, -20, 0, 30);
+v105.Position = New_4(0, 10, 0, 0);
+v105.Text = "AIMBOT";
+v105.Font = Enum.Font.GothamBold;
+v105.TextSize = 11;
+v105.TextColor3 = FromRGB_5(200, 200, 200);
+v105.BackgroundTransparency = 1;
+v105.TextXAlignment = 0;
+local v114 = Instance.new("Frame", v94);
+v114.Size = New_4(1, -20, 1, -40);
+v114.Position = New_4(0, 10, 0, 35);
+v114.BackgroundTransparency = 1;
+local v119 = Instance.new("UIListLayout", v114);
+v119.Padding = New_6(0, 12);
+v119:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function(p1_4, p2_4, p3_4, p4_4, p5_4, a_4, b_4, c_4)
+    v94.Size = New_4(
+        1,
+        0,
+        0,
+        v119.AbsoluteContentSize.Y + 50
+    );
+end);
+local v127 = Instance.new("TextButton", v114);
+v127.Size = New_4(1, 0, 0, 24);
+v127.BackgroundTransparency = 1;
+v127.Text = "";
+local v130 = Instance.new("TextLabel", v127);
+v130.Text = "Hitbox Expander";
+v130.Size = New_4(1, -40, 1, 0);
+v130.TextColor3 = FromRGB_5(130, 135, 145);
+v130.BackgroundTransparency = 1;
+v130.TextXAlignment = 0;
+v130.Font = Enum.Font.GothamMedium;
+v130.TextSize = 13;
+local v137 = Instance.new("Frame", v127);
+v137.Size = New_4(0, 32, 0, 16);
+v137.Position = New_4(1, -32, 0.5, -8);
+v137.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v137.BorderSizePixel = 0;
+Instance.new("UICorner", v137).CornerRadius = New_6(1, 0);
+local v147 = Instance.new("Frame", v137);
+v147.Size = New_4(0, 10, 0, 10);
+v147.Position = New_4(0, 3, 0.5, -5);
+v147.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v147).CornerRadius = New_6(1, 0);
+v127.MouseButton1Click:Connect(function(p1_5, p2_5, p3_5, a_5, b_5, c_5)
+    New_9 = TweenInfo.new;
+    v955 = New_4(1, -13, 0.5, -5);
+    if v955 then
+    else 
+        v9:Create(v147, New_9(0.2), {
+            ["Position"] = v955
+        }):Play();
+    end;
+    v964 = FromRGB_5(0, 162, 255);
+    if v964 then 
+        v9:Create(v137, New_9(0.2), {
+            ["BackgroundColor3"] = v964
+        }):Play();
+        task.spawn(function()
+            for for_key_2, for_val_2 in pairs(v11:GetPlayers()) do
+                if for_key_2 then
+                else 
+                end;
+                if (for_val_2 ~= LocalPlayer_1) then 
+                    if for_val_2.Character then 
+                    end;
+                end;
+                if for_val_2.Character:FindFirstChild("Head") then
+                else 
+                    New_11 = Vector3.new;
+                    for_val_2.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_2.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_3, for_val_3 in pairs(v11:GetPlayers()) do
+                if for_key_3 then
+                else 
+                end;
+                if (for_val_3 ~= LocalPlayer_1) then 
+                    if for_val_3.Character then 
+                    end;
+                end;
+                if for_val_3.Character:FindFirstChild("Head") then
+                else 
+                    for_val_3.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_3.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_4, for_val_4 in pairs(v11:GetPlayers()) do
+                if for_key_4 then
+                else 
+                end;
+                if (for_val_4 ~= LocalPlayer_1) then 
+                    if for_val_4.Character then 
+                    end;
+                end;
+                if for_val_4.Character:FindFirstChild("Head") then
+                else 
+                    for_val_4.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_4.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_5, for_val_5 in pairs(v11:GetPlayers()) do
+                if for_key_5 then
+                else 
+                end;
+                if (for_val_5 ~= LocalPlayer_1) then 
+                    if for_val_5.Character then 
+                    end;
+                end;
+                if for_val_5.Character:FindFirstChild("Head") then
+                else 
+                    for_val_5.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_5.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_6, for_val_6 in pairs(v11:GetPlayers()) do
+                if for_key_6 then
+                else 
+                end;
+                if (for_val_6 ~= LocalPlayer_1) then 
+                    if for_val_6.Character then 
+                    end;
+                end;
+                if for_val_6.Character:FindFirstChild("Head") then
+                else 
+                    for_val_6.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_6.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_7, for_val_7 in pairs(v11:GetPlayers()) do
+                if for_key_7 then
+                else 
+                end;
+                if (for_val_7 ~= LocalPlayer_1) then 
+                    if for_val_7.Character then 
+                    end;
+                end;
+                if for_val_7.Character:FindFirstChild("Head") then
+                else 
+                    for_val_7.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_7.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_8, for_val_8 in pairs(v11:GetPlayers()) do
+                if for_key_8 then
+                else 
+                end;
+                if (for_val_8 ~= LocalPlayer_1) then 
+                    if for_val_8.Character then 
+                    end;
+                end;
+                if for_val_8.Character:FindFirstChild("Head") then
+                else 
+                    for_val_8.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_8.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_9, for_val_9 in pairs(v11:GetPlayers()) do
+                if for_key_9 then
+                else 
+                end;
+                if (for_val_9 ~= LocalPlayer_1) then 
+                    if for_val_9.Character then 
+                    end;
+                end;
+                if for_val_9.Character:FindFirstChild("Head") then
+                else 
+                    for_val_9.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_9.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_10, for_val_10 in pairs(v11:GetPlayers()) do
+                if for_key_10 then
+                else 
+                end;
+                if (for_val_10 ~= LocalPlayer_1) then 
+                    if for_val_10.Character then 
+                    end;
+                end;
+                if for_val_10.Character:FindFirstChild("Head") then
+                else 
+                    for_val_10.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_10.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_11, for_val_11 in pairs(v11:GetPlayers()) do
+                if for_key_11 then
+                else 
+                end;
+                if (for_val_11 ~= LocalPlayer_1) then 
+                    if for_val_11.Character then 
+                    end;
+                end;
+                if for_val_11.Character:FindFirstChild("Head") then
+                else 
+                    for_val_11.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_11.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_12, for_val_12 in pairs(v11:GetPlayers()) do
+                if for_key_12 then
+                else 
+                end;
+                if (for_val_12 ~= LocalPlayer_1) then 
+                    if for_val_12.Character then 
+                    end;
+                end;
+                if for_val_12.Character:FindFirstChild("Head") then
+                else 
+                    for_val_12.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_12.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_13, for_val_13 in pairs(v11:GetPlayers()) do
+                if for_key_13 then
+                else 
+                end;
+                if (for_val_13 ~= LocalPlayer_1) then 
+                    if for_val_13.Character then 
+                    end;
+                end;
+                if for_val_13.Character:FindFirstChild("Head") then
+                else 
+                    for_val_13.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_13.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_14, for_val_14 in pairs(v11:GetPlayers()) do
+                if for_key_14 then
+                else 
+                end;
+                if (for_val_14 ~= LocalPlayer_1) then 
+                    if for_val_14.Character then 
+                    end;
+                end;
+                if for_val_14.Character:FindFirstChild("Head") then
+                else 
+                    for_val_14.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_14.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_15, for_val_15 in pairs(v11:GetPlayers()) do
+                if for_key_15 then
+                else 
+                end;
+                if (for_val_15 ~= LocalPlayer_1) then 
+                    if for_val_15.Character then 
+                    end;
+                end;
+                if for_val_15.Character:FindFirstChild("Head") then
+                else 
+                    for_val_15.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_15.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_16, for_val_16 in pairs(v11:GetPlayers()) do
+                if for_key_16 then
+                else 
+                end;
+                if (for_val_16 ~= LocalPlayer_1) then 
+                    if for_val_16.Character then 
+                    end;
+                end;
+                if for_val_16.Character:FindFirstChild("Head") then
+                else 
+                    for_val_16.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_16.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_17, for_val_17 in pairs(v11:GetPlayers()) do
+                if for_key_17 then
+                else 
+                end;
+                if (for_val_17 ~= LocalPlayer_1) then 
+                    if for_val_17.Character then 
+                    end;
+                end;
+                if for_val_17.Character:FindFirstChild("Head") then
+                else 
+                    for_val_17.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_17.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_18, for_val_18 in pairs(v11:GetPlayers()) do
+                if for_key_18 then
+                else 
+                end;
+                if (for_val_18 ~= LocalPlayer_1) then 
+                    if for_val_18.Character then 
+                    end;
+                end;
+                if for_val_18.Character:FindFirstChild("Head") then
+                else 
+                    for_val_18.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_18.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_19, for_val_19 in pairs(v11:GetPlayers()) do
+                if for_key_19 then
+                else 
+                end;
+                if (for_val_19 ~= LocalPlayer_1) then 
+                    if for_val_19.Character then 
+                    end;
+                end;
+                if for_val_19.Character:FindFirstChild("Head") then
+                else 
+                    for_val_19.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_19.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_20, for_val_20 in pairs(v11:GetPlayers()) do
+                if for_key_20 then
+                else 
+                end;
+                if (for_val_20 ~= LocalPlayer_1) then 
+                    if for_val_20.Character then 
+                    end;
+                end;
+                if for_val_20.Character:FindFirstChild("Head") then
+                else 
+                    for_val_20.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_20.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_21, for_val_21 in pairs(v11:GetPlayers()) do
+                if for_key_21 then
+                else 
+                end;
+                if (for_val_21 ~= LocalPlayer_1) then 
+                    if for_val_21.Character then 
+                    end;
+                end;
+                if for_val_21.Character:FindFirstChild("Head") then
+                else 
+                    for_val_21.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_21.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_22, for_val_22 in pairs(v11:GetPlayers()) do
+                if for_key_22 then
+                else 
+                end;
+                if (for_val_22 ~= LocalPlayer_1) then 
+                    if for_val_22.Character then 
+                    end;
+                end;
+                if for_val_22.Character:FindFirstChild("Head") then
+                else 
+                    for_val_22.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_22.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_23, for_val_23 in pairs(v11:GetPlayers()) do
+                if for_key_23 then
+                else 
+                end;
+                if (for_val_23 ~= LocalPlayer_1) then 
+                    if for_val_23.Character then 
+                    end;
+                end;
+                if for_val_23.Character:FindFirstChild("Head") then
+                else 
+                    for_val_23.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_23.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_24, for_val_24 in pairs(v11:GetPlayers()) do
+                if for_key_24 then
+                else 
+                end;
+                if (for_val_24 ~= LocalPlayer_1) then 
+                    if for_val_24.Character then 
+                    end;
+                end;
+                if for_val_24.Character:FindFirstChild("Head") then
+                else 
+                    for_val_24.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_24.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_25, for_val_25 in pairs(v11:GetPlayers()) do
+                if for_key_25 then
+                else 
+                end;
+                if (for_val_25 ~= LocalPlayer_1) then 
+                    if for_val_25.Character then 
+                    end;
+                end;
+                if for_val_25.Character:FindFirstChild("Head") then
+                else 
+                    for_val_25.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_25.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_26, for_val_26 in pairs(v11:GetPlayers()) do
+                if for_key_26 then
+                else 
+                end;
+                if (for_val_26 ~= LocalPlayer_1) then 
+                    if for_val_26.Character then 
+                    end;
+                end;
+                if for_val_26.Character:FindFirstChild("Head") then
+                else 
+                    for_val_26.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_26.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_27, for_val_27 in pairs(v11:GetPlayers()) do
+                if for_key_27 then
+                else 
+                end;
+                if (for_val_27 ~= LocalPlayer_1) then 
+                    if for_val_27.Character then 
+                    end;
+                end;
+                if for_val_27.Character:FindFirstChild("Head") then
+                else 
+                    for_val_27.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_27.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_28, for_val_28 in pairs(v11:GetPlayers()) do
+                if for_key_28 then
+                else 
+                end;
+                if (for_val_28 ~= LocalPlayer_1) then 
+                    if for_val_28.Character then 
+                    end;
+                end;
+                if for_val_28.Character:FindFirstChild("Head") then
+                else 
+                    for_val_28.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_28.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_29, for_val_29 in pairs(v11:GetPlayers()) do
+                if for_key_29 then
+                else 
+                end;
+                if (for_val_29 ~= LocalPlayer_1) then 
+                    if for_val_29.Character then 
+                    end;
+                end;
+                if for_val_29.Character:FindFirstChild("Head") then
+                else 
+                    for_val_29.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_29.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_30, for_val_30 in pairs(v11:GetPlayers()) do
+                if for_key_30 then
+                else 
+                end;
+                if (for_val_30 ~= LocalPlayer_1) then 
+                    if for_val_30.Character then 
+                    end;
+                end;
+                if for_val_30.Character:FindFirstChild("Head") then
+                else 
+                    for_val_30.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_30.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_31, for_val_31 in pairs(v11:GetPlayers()) do
+                if for_key_31 then
+                else 
+                end;
+                if (for_val_31 ~= LocalPlayer_1) then 
+                    if for_val_31.Character then 
+                    end;
+                end;
+                if for_val_31.Character:FindFirstChild("Head") then
+                else 
+                    for_val_31.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_31.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_32, for_val_32 in pairs(v11:GetPlayers()) do
+                if for_key_32 then
+                else 
+                end;
+                if (for_val_32 ~= LocalPlayer_1) then 
+                    if for_val_32.Character then 
+                    end;
+                end;
+                if for_val_32.Character:FindFirstChild("Head") then
+                else 
+                    for_val_32.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_32.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_33, for_val_33 in pairs(v11:GetPlayers()) do
+                if for_key_33 then
+                else 
+                end;
+                if (for_val_33 ~= LocalPlayer_1) then 
+                    if for_val_33.Character then 
+                    end;
+                end;
+                if for_val_33.Character:FindFirstChild("Head") then
+                else 
+                    for_val_33.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_33.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_34, for_val_34 in pairs(v11:GetPlayers()) do
+                if for_key_34 then
+                else 
+                end;
+                if (for_val_34 ~= LocalPlayer_1) then 
+                    if for_val_34.Character then 
+                    end;
+                end;
+                if for_val_34.Character:FindFirstChild("Head") then
+                else 
+                    for_val_34.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_34.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_35, for_val_35 in pairs(v11:GetPlayers()) do
+                if for_key_35 then
+                else 
+                end;
+                if (for_val_35 ~= LocalPlayer_1) then 
+                    if for_val_35.Character then 
+                    end;
+                end;
+                if for_val_35.Character:FindFirstChild("Head") then
+                else 
+                    for_val_35.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_35.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_36, for_val_36 in pairs(v11:GetPlayers()) do
+                if for_key_36 then
+                else 
+                end;
+                if (for_val_36 ~= LocalPlayer_1) then 
+                    if for_val_36.Character then 
+                    end;
+                end;
+                if for_val_36.Character:FindFirstChild("Head") then
+                else 
+                    for_val_36.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_36.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_37, for_val_37 in pairs(v11:GetPlayers()) do
+                if for_key_37 then
+                else 
+                end;
+                if (for_val_37 ~= LocalPlayer_1) then 
+                    if for_val_37.Character then 
+                    end;
+                end;
+                if for_val_37.Character:FindFirstChild("Head") then
+                else 
+                    for_val_37.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_37.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_38, for_val_38 in pairs(v11:GetPlayers()) do
+                if for_key_38 then
+                else 
+                end;
+                if (for_val_38 ~= LocalPlayer_1) then 
+                    if for_val_38.Character then 
+                    end;
+                end;
+                if for_val_38.Character:FindFirstChild("Head") then
+                else 
+                    for_val_38.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_38.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_39, for_val_39 in pairs(v11:GetPlayers()) do
+                if for_key_39 then
+                else 
+                end;
+                if (for_val_39 ~= LocalPlayer_1) then 
+                    if for_val_39.Character then 
+                    end;
+                end;
+                if for_val_39.Character:FindFirstChild("Head") then
+                else 
+                    for_val_39.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_39.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_40, for_val_40 in pairs(v11:GetPlayers()) do
+                if for_key_40 then
+                else 
+                end;
+                if (for_val_40 ~= LocalPlayer_1) then 
+                    if for_val_40.Character then 
+                    end;
+                end;
+                if for_val_40.Character:FindFirstChild("Head") then
+                else 
+                    for_val_40.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_40.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_41, for_val_41 in pairs(v11:GetPlayers()) do
+                if for_key_41 then
+                else 
+                end;
+                if (for_val_41 ~= LocalPlayer_1) then 
+                    if for_val_41.Character then 
+                    end;
+                end;
+                if for_val_41.Character:FindFirstChild("Head") then
+                else 
+                    for_val_41.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_41.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_42, for_val_42 in pairs(v11:GetPlayers()) do
+                if for_key_42 then
+                else 
+                end;
+                if (for_val_42 ~= LocalPlayer_1) then 
+                    if for_val_42.Character then 
+                    end;
+                end;
+                if for_val_42.Character:FindFirstChild("Head") then
+                else 
+                    for_val_42.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_42.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_43, for_val_43 in pairs(v11:GetPlayers()) do
+                if for_key_43 then
+                else 
+                end;
+                if (for_val_43 ~= LocalPlayer_1) then 
+                    if for_val_43.Character then 
+                    end;
+                end;
+                if for_val_43.Character:FindFirstChild("Head") then
+                else 
+                    for_val_43.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_43.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_44, for_val_44 in pairs(v11:GetPlayers()) do
+                if for_key_44 then
+                else 
+                end;
+                if (for_val_44 ~= LocalPlayer_1) then 
+                    if for_val_44.Character then 
+                    end;
+                end;
+                if for_val_44.Character:FindFirstChild("Head") then
+                else 
+                    for_val_44.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_44.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_45, for_val_45 in pairs(v11:GetPlayers()) do
+                if for_key_45 then
+                else 
+                end;
+                if (for_val_45 ~= LocalPlayer_1) then 
+                    if for_val_45.Character then 
+                    end;
+                end;
+                if for_val_45.Character:FindFirstChild("Head") then
+                else 
+                    for_val_45.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_45.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_46, for_val_46 in pairs(v11:GetPlayers()) do
+                if for_key_46 then
+                else 
+                end;
+                if (for_val_46 ~= LocalPlayer_1) then 
+                    if for_val_46.Character then 
+                    end;
+                end;
+                if for_val_46.Character:FindFirstChild("Head") then
+                else 
+                    for_val_46.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_46.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_47, for_val_47 in pairs(v11:GetPlayers()) do
+                if for_key_47 then
+                else 
+                end;
+                if (for_val_47 ~= LocalPlayer_1) then 
+                    if for_val_47.Character then 
+                    end;
+                end;
+                if for_val_47.Character:FindFirstChild("Head") then
+                else 
+                    for_val_47.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_47.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_48, for_val_48 in pairs(v11:GetPlayers()) do
+                if for_key_48 then
+                else 
+                end;
+                if (for_val_48 ~= LocalPlayer_1) then 
+                    if for_val_48.Character then 
+                    end;
+                end;
+                if for_val_48.Character:FindFirstChild("Head") then
+                else 
+                    for_val_48.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_48.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_49, for_val_49 in pairs(v11:GetPlayers()) do
+                if for_key_49 then
+                else 
+                end;
+                if (for_val_49 ~= LocalPlayer_1) then 
+                    if for_val_49.Character then 
+                    end;
+                end;
+                if for_val_49.Character:FindFirstChild("Head") then
+                else 
+                    for_val_49.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_49.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_50, for_val_50 in pairs(v11:GetPlayers()) do
+                if for_key_50 then
+                else 
+                end;
+                if (for_val_50 ~= LocalPlayer_1) then 
+                    if for_val_50.Character then 
+                    end;
+                end;
+                if for_val_50.Character:FindFirstChild("Head") then
+                else 
+                    for_val_50.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_50.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_51, for_val_51 in pairs(v11:GetPlayers()) do
+                if for_key_51 then
+                else 
+                end;
+                if (for_val_51 ~= LocalPlayer_1) then 
+                    if for_val_51.Character then 
+                    end;
+                end;
+                if for_val_51.Character:FindFirstChild("Head") then
+                else 
+                    for_val_51.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_51.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_52, for_val_52 in pairs(v11:GetPlayers()) do
+                if for_key_52 then
+                else 
+                end;
+                if (for_val_52 ~= LocalPlayer_1) then 
+                    if for_val_52.Character then 
+                    end;
+                end;
+                if for_val_52.Character:FindFirstChild("Head") then
+                else 
+                    for_val_52.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_52.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_53, for_val_53 in pairs(v11:GetPlayers()) do
+                if for_key_53 then
+                else 
+                end;
+                if (for_val_53 ~= LocalPlayer_1) then 
+                    if for_val_53.Character then 
+                    end;
+                end;
+                if for_val_53.Character:FindFirstChild("Head") then
+                else 
+                    for_val_53.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_53.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_54, for_val_54 in pairs(v11:GetPlayers()) do
+                if for_key_54 then
+                else 
+                end;
+                if (for_val_54 ~= LocalPlayer_1) then 
+                    if for_val_54.Character then 
+                    end;
+                end;
+                if for_val_54.Character:FindFirstChild("Head") then
+                else 
+                    for_val_54.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_54.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_55, for_val_55 in pairs(v11:GetPlayers()) do
+                if for_key_55 then
+                else 
+                end;
+                if (for_val_55 ~= LocalPlayer_1) then 
+                    if for_val_55.Character then 
+                    end;
+                end;
+                if for_val_55.Character:FindFirstChild("Head") then
+                else 
+                    for_val_55.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_55.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_56, for_val_56 in pairs(v11:GetPlayers()) do
+                if for_key_56 then
+                else 
+                end;
+                if (for_val_56 ~= LocalPlayer_1) then 
+                    if for_val_56.Character then 
+                    end;
+                end;
+                if for_val_56.Character:FindFirstChild("Head") then
+                else 
+                    for_val_56.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_56.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_57, for_val_57 in pairs(v11:GetPlayers()) do
+                if for_key_57 then
+                else 
+                end;
+                if (for_val_57 ~= LocalPlayer_1) then 
+                    if for_val_57.Character then 
+                    end;
+                end;
+                if for_val_57.Character:FindFirstChild("Head") then
+                else 
+                    for_val_57.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_57.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_58, for_val_58 in pairs(v11:GetPlayers()) do
+                if for_key_58 then
+                else 
+                end;
+                if (for_val_58 ~= LocalPlayer_1) then 
+                    if for_val_58.Character then 
+                    end;
+                end;
+                if for_val_58.Character:FindFirstChild("Head") then
+                else 
+                    for_val_58.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_58.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_59, for_val_59 in pairs(v11:GetPlayers()) do
+                if for_key_59 then
+                else 
+                end;
+                if (for_val_59 ~= LocalPlayer_1) then 
+                    if for_val_59.Character then 
+                    end;
+                end;
+                if for_val_59.Character:FindFirstChild("Head") then
+                else 
+                    for_val_59.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_59.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_60, for_val_60 in pairs(v11:GetPlayers()) do
+                if for_key_60 then
+                else 
+                end;
+                if (for_val_60 ~= LocalPlayer_1) then 
+                    if for_val_60.Character then 
+                    end;
+                end;
+                if for_val_60.Character:FindFirstChild("Head") then
+                else 
+                    for_val_60.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_60.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_61, for_val_61 in pairs(v11:GetPlayers()) do
+                if for_key_61 then
+                else 
+                end;
+                if (for_val_61 ~= LocalPlayer_1) then 
+                    if for_val_61.Character then 
+                    end;
+                end;
+                if for_val_61.Character:FindFirstChild("Head") then
+                else 
+                    for_val_61.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_61.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_62, for_val_62 in pairs(v11:GetPlayers()) do
+                if for_key_62 then
+                else 
+                end;
+                if (for_val_62 ~= LocalPlayer_1) then 
+                    if for_val_62.Character then 
+                    end;
+                end;
+                if for_val_62.Character:FindFirstChild("Head") then
+                else 
+                    for_val_62.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_62.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_63, for_val_63 in pairs(v11:GetPlayers()) do
+                if for_key_63 then
+                else 
+                end;
+                if (for_val_63 ~= LocalPlayer_1) then 
+                    if for_val_63.Character then 
+                    end;
+                end;
+                if for_val_63.Character:FindFirstChild("Head") then
+                else 
+                    for_val_63.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_63.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_64, for_val_64 in pairs(v11:GetPlayers()) do
+                if for_key_64 then
+                else 
+                end;
+                if (for_val_64 ~= LocalPlayer_1) then 
+                    if for_val_64.Character then 
+                    end;
+                end;
+                if for_val_64.Character:FindFirstChild("Head") then
+                else 
+                    for_val_64.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_64.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_65, for_val_65 in pairs(v11:GetPlayers()) do
+                if for_key_65 then
+                else 
+                end;
+                if (for_val_65 ~= LocalPlayer_1) then 
+                    if for_val_65.Character then 
+                    end;
+                end;
+                if for_val_65.Character:FindFirstChild("Head") then
+                else 
+                    for_val_65.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_65.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_66, for_val_66 in pairs(v11:GetPlayers()) do
+                if for_key_66 then
+                else 
+                end;
+                if (for_val_66 ~= LocalPlayer_1) then 
+                    if for_val_66.Character then 
+                    end;
+                end;
+                if for_val_66.Character:FindFirstChild("Head") then
+                else 
+                    for_val_66.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_66.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_67, for_val_67 in pairs(v11:GetPlayers()) do
+                if for_key_67 then
+                else 
+                end;
+                if (for_val_67 ~= LocalPlayer_1) then 
+                    if for_val_67.Character then 
+                    end;
+                end;
+                if for_val_67.Character:FindFirstChild("Head") then
+                else 
+                    for_val_67.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_67.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_68, for_val_68 in pairs(v11:GetPlayers()) do
+                if for_key_68 then
+                else 
+                end;
+                if (for_val_68 ~= LocalPlayer_1) then 
+                    if for_val_68.Character then 
+                    end;
+                end;
+                if for_val_68.Character:FindFirstChild("Head") then
+                else 
+                    for_val_68.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_68.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_69, for_val_69 in pairs(v11:GetPlayers()) do
+                if for_key_69 then
+                else 
+                end;
+                if (for_val_69 ~= LocalPlayer_1) then 
+                    if for_val_69.Character then 
+                    end;
+                end;
+                if for_val_69.Character:FindFirstChild("Head") then
+                else 
+                    for_val_69.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_69.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_70, for_val_70 in pairs(v11:GetPlayers()) do
+                if for_key_70 then
+                else 
+                end;
+                if (for_val_70 ~= LocalPlayer_1) then 
+                    if for_val_70.Character then 
+                    end;
+                end;
+                if for_val_70.Character:FindFirstChild("Head") then
+                else 
+                    for_val_70.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_70.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_71, for_val_71 in pairs(v11:GetPlayers()) do
+                if for_key_71 then
+                else 
+                end;
+                if (for_val_71 ~= LocalPlayer_1) then 
+                    if for_val_71.Character then 
+                    end;
+                end;
+                if for_val_71.Character:FindFirstChild("Head") then
+                else 
+                    for_val_71.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_71.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_72, for_val_72 in pairs(v11:GetPlayers()) do
+                if for_key_72 then
+                else 
+                end;
+                if (for_val_72 ~= LocalPlayer_1) then 
+                    if for_val_72.Character then 
+                    end;
+                end;
+                if for_val_72.Character:FindFirstChild("Head") then
+                else 
+                    for_val_72.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_72.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_73, for_val_73 in pairs(v11:GetPlayers()) do
+                if for_key_73 then
+                else 
+                end;
+                if (for_val_73 ~= LocalPlayer_1) then 
+                    if for_val_73.Character then 
+                    end;
+                end;
+                if for_val_73.Character:FindFirstChild("Head") then
+                else 
+                    for_val_73.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_73.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_74, for_val_74 in pairs(v11:GetPlayers()) do
+                if for_key_74 then
+                else 
+                end;
+                if (for_val_74 ~= LocalPlayer_1) then 
+                    if for_val_74.Character then 
+                    end;
+                end;
+                if for_val_74.Character:FindFirstChild("Head") then
+                else 
+                    for_val_74.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_74.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_75, for_val_75 in pairs(v11:GetPlayers()) do
+                if for_key_75 then
+                else 
+                end;
+                if (for_val_75 ~= LocalPlayer_1) then 
+                    if for_val_75.Character then 
+                    end;
+                end;
+                if for_val_75.Character:FindFirstChild("Head") then
+                else 
+                    for_val_75.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_75.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_76, for_val_76 in pairs(v11:GetPlayers()) do
+                if for_key_76 then
+                else 
+                end;
+                if (for_val_76 ~= LocalPlayer_1) then 
+                    if for_val_76.Character then 
+                    end;
+                end;
+                if for_val_76.Character:FindFirstChild("Head") then
+                else 
+                    for_val_76.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_76.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_77, for_val_77 in pairs(v11:GetPlayers()) do
+                if for_key_77 then
+                else 
+                end;
+                if (for_val_77 ~= LocalPlayer_1) then 
+                    if for_val_77.Character then 
+                    end;
+                end;
+                if for_val_77.Character:FindFirstChild("Head") then
+                else 
+                    for_val_77.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_77.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_78, for_val_78 in pairs(v11:GetPlayers()) do
+                if for_key_78 then
+                else 
+                end;
+                if (for_val_78 ~= LocalPlayer_1) then 
+                    if for_val_78.Character then 
+                    end;
+                end;
+                if for_val_78.Character:FindFirstChild("Head") then
+                else 
+                    for_val_78.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_78.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_79, for_val_79 in pairs(v11:GetPlayers()) do
+                if for_key_79 then
+                else 
+                end;
+                if (for_val_79 ~= LocalPlayer_1) then 
+                    if for_val_79.Character then 
+                    end;
+                end;
+                if for_val_79.Character:FindFirstChild("Head") then
+                else 
+                    for_val_79.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_79.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_80, for_val_80 in pairs(v11:GetPlayers()) do
+                if for_key_80 then
+                else 
+                end;
+                if (for_val_80 ~= LocalPlayer_1) then 
+                    if for_val_80.Character then 
+                    end;
+                end;
+                if for_val_80.Character:FindFirstChild("Head") then
+                else 
+                    for_val_80.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_80.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_81, for_val_81 in pairs(v11:GetPlayers()) do
+                if for_key_81 then
+                else 
+                end;
+                if (for_val_81 ~= LocalPlayer_1) then 
+                    if for_val_81.Character then 
+                    end;
+                end;
+                if for_val_81.Character:FindFirstChild("Head") then
+                else 
+                    for_val_81.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_81.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_82, for_val_82 in pairs(v11:GetPlayers()) do
+                if for_key_82 then
+                else 
+                end;
+                if (for_val_82 ~= LocalPlayer_1) then 
+                    if for_val_82.Character then 
+                    end;
+                end;
+                if for_val_82.Character:FindFirstChild("Head") then
+                else 
+                    for_val_82.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_82.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_83, for_val_83 in pairs(v11:GetPlayers()) do
+                if for_key_83 then
+                else 
+                end;
+                if (for_val_83 ~= LocalPlayer_1) then 
+                    if for_val_83.Character then 
+                    end;
+                end;
+                if for_val_83.Character:FindFirstChild("Head") then
+                else 
+                    for_val_83.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_83.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_84, for_val_84 in pairs(v11:GetPlayers()) do
+                if for_key_84 then
+                else 
+                end;
+                if (for_val_84 ~= LocalPlayer_1) then 
+                    if for_val_84.Character then 
+                    end;
+                end;
+                if for_val_84.Character:FindFirstChild("Head") then
+                else 
+                    for_val_84.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_84.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_85, for_val_85 in pairs(v11:GetPlayers()) do
+                if for_key_85 then
+                else 
+                end;
+                if (for_val_85 ~= LocalPlayer_1) then 
+                    if for_val_85.Character then 
+                    end;
+                end;
+                if for_val_85.Character:FindFirstChild("Head") then
+                else 
+                    for_val_85.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_85.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_86, for_val_86 in pairs(v11:GetPlayers()) do
+                if for_key_86 then
+                else 
+                end;
+                if (for_val_86 ~= LocalPlayer_1) then 
+                    if for_val_86.Character then 
+                    end;
+                end;
+                if for_val_86.Character:FindFirstChild("Head") then
+                else 
+                    for_val_86.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_86.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_87, for_val_87 in pairs(v11:GetPlayers()) do
+                if for_key_87 then
+                else 
+                end;
+                if (for_val_87 ~= LocalPlayer_1) then 
+                    if for_val_87.Character then 
+                    end;
+                end;
+                if for_val_87.Character:FindFirstChild("Head") then
+                else 
+                    for_val_87.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_87.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_88, for_val_88 in pairs(v11:GetPlayers()) do
+                if for_key_88 then
+                else 
+                end;
+                if (for_val_88 ~= LocalPlayer_1) then 
+                    if for_val_88.Character then 
+                    end;
+                end;
+                if for_val_88.Character:FindFirstChild("Head") then
+                else 
+                    for_val_88.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_88.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_89, for_val_89 in pairs(v11:GetPlayers()) do
+                if for_key_89 then
+                else 
+                end;
+                if (for_val_89 ~= LocalPlayer_1) then 
+                    if for_val_89.Character then 
+                    end;
+                end;
+                if for_val_89.Character:FindFirstChild("Head") then
+                else 
+                    for_val_89.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_89.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_90, for_val_90 in pairs(v11:GetPlayers()) do
+                if for_key_90 then
+                else 
+                end;
+                if (for_val_90 ~= LocalPlayer_1) then 
+                    if for_val_90.Character then 
+                    end;
+                end;
+                if for_val_90.Character:FindFirstChild("Head") then
+                else 
+                    for_val_90.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_90.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_91, for_val_91 in pairs(v11:GetPlayers()) do
+                if for_key_91 then
+                else 
+                end;
+                if (for_val_91 ~= LocalPlayer_1) then 
+                    if for_val_91.Character then 
+                    end;
+                end;
+                if for_val_91.Character:FindFirstChild("Head") then
+                else 
+                    for_val_91.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_91.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_92, for_val_92 in pairs(v11:GetPlayers()) do
+                if for_key_92 then
+                else 
+                end;
+                if (for_val_92 ~= LocalPlayer_1) then 
+                    if for_val_92.Character then 
+                    end;
+                end;
+                if for_val_92.Character:FindFirstChild("Head") then
+                else 
+                    for_val_92.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_92.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_93, for_val_93 in pairs(v11:GetPlayers()) do
+                if for_key_93 then
+                else 
+                end;
+                if (for_val_93 ~= LocalPlayer_1) then 
+                    if for_val_93.Character then 
+                    end;
+                end;
+                if for_val_93.Character:FindFirstChild("Head") then
+                else 
+                    for_val_93.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_93.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_94, for_val_94 in pairs(v11:GetPlayers()) do
+                if for_key_94 then
+                else 
+                end;
+                if (for_val_94 ~= LocalPlayer_1) then 
+                    if for_val_94.Character then 
+                    end;
+                end;
+                if for_val_94.Character:FindFirstChild("Head") then
+                else 
+                    for_val_94.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_94.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_95, for_val_95 in pairs(v11:GetPlayers()) do
+                if for_key_95 then
+                else 
+                end;
+                if (for_val_95 ~= LocalPlayer_1) then 
+                    if for_val_95.Character then 
+                    end;
+                end;
+                if for_val_95.Character:FindFirstChild("Head") then
+                else 
+                    for_val_95.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_95.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_96, for_val_96 in pairs(v11:GetPlayers()) do
+                if for_key_96 then
+                else 
+                end;
+                if (for_val_96 ~= LocalPlayer_1) then 
+                    if for_val_96.Character then 
+                    end;
+                end;
+                if for_val_96.Character:FindFirstChild("Head") then
+                else 
+                    for_val_96.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_96.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_97, for_val_97 in pairs(v11:GetPlayers()) do
+                if for_key_97 then
+                else 
+                end;
+                if (for_val_97 ~= LocalPlayer_1) then 
+                    if for_val_97.Character then 
+                    end;
+                end;
+                if for_val_97.Character:FindFirstChild("Head") then
+                else 
+                    for_val_97.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_97.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_98, for_val_98 in pairs(v11:GetPlayers()) do
+                if for_key_98 then
+                else 
+                end;
+                if (for_val_98 ~= LocalPlayer_1) then 
+                    if for_val_98.Character then 
+                    end;
+                end;
+                if for_val_98.Character:FindFirstChild("Head") then
+                else 
+                    for_val_98.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_98.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_99, for_val_99 in pairs(v11:GetPlayers()) do
+                if for_key_99 then
+                else 
+                end;
+                if (for_val_99 ~= LocalPlayer_1) then 
+                    if for_val_99.Character then 
+                    end;
+                end;
+                if for_val_99.Character:FindFirstChild("Head") then
+                else 
+                    for_val_99.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_99.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_100, for_val_100 in pairs(v11:GetPlayers()) do
+                if for_key_100 then
+                else 
+                end;
+                if (for_val_100 ~= LocalPlayer_1) then 
+                    if for_val_100.Character then 
+                    end;
+                end;
+                if for_val_100.Character:FindFirstChild("Head") then
+                else 
+                    for_val_100.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_100.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_101, for_val_101 in pairs(v11:GetPlayers()) do
+                if for_key_101 then
+                else 
+                end;
+                if (for_val_101 ~= LocalPlayer_1) then 
+                    if for_val_101.Character then 
+                    end;
+                end;
+                if for_val_101.Character:FindFirstChild("Head") then
+                else 
+                    for_val_101.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_101.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_102, for_val_102 in pairs(v11:GetPlayers()) do
+                if for_key_102 then
+                else 
+                end;
+                if (for_val_102 ~= LocalPlayer_1) then 
+                    if for_val_102.Character then 
+                    end;
+                end;
+                if for_val_102.Character:FindFirstChild("Head") then
+                else 
+                    for_val_102.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_102.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_103, for_val_103 in pairs(v11:GetPlayers()) do
+                if for_key_103 then
+                else 
+                end;
+                if (for_val_103 ~= LocalPlayer_1) then 
+                    if for_val_103.Character then 
+                    end;
+                end;
+                if for_val_103.Character:FindFirstChild("Head") then
+                else 
+                    for_val_103.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_103.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_104, for_val_104 in pairs(v11:GetPlayers()) do
+                if for_key_104 then
+                else 
+                end;
+                if (for_val_104 ~= LocalPlayer_1) then 
+                    if for_val_104.Character then 
+                    end;
+                end;
+                if for_val_104.Character:FindFirstChild("Head") then
+                else 
+                    for_val_104.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_104.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_105, for_val_105 in pairs(v11:GetPlayers()) do
+                if for_key_105 then
+                else 
+                end;
+                if (for_val_105 ~= LocalPlayer_1) then 
+                    if for_val_105.Character then 
+                    end;
+                end;
+                if for_val_105.Character:FindFirstChild("Head") then
+                else 
+                    for_val_105.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_105.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_106, for_val_106 in pairs(v11:GetPlayers()) do
+                if for_key_106 then
+                else 
+                end;
+                if (for_val_106 ~= LocalPlayer_1) then 
+                    if for_val_106.Character then 
+                    end;
+                end;
+                if for_val_106.Character:FindFirstChild("Head") then
+                else 
+                    for_val_106.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_106.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_107, for_val_107 in pairs(v11:GetPlayers()) do
+                if for_key_107 then
+                else 
+                end;
+                if (for_val_107 ~= LocalPlayer_1) then 
+                    if for_val_107.Character then 
+                    end;
+                end;
+                if for_val_107.Character:FindFirstChild("Head") then
+                else 
+                    for_val_107.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_107.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_108, for_val_108 in pairs(v11:GetPlayers()) do
+                if for_key_108 then
+                else 
+                end;
+                if (for_val_108 ~= LocalPlayer_1) then 
+                    if for_val_108.Character then 
+                    end;
+                end;
+                if for_val_108.Character:FindFirstChild("Head") then
+                else 
+                    for_val_108.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_108.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_109, for_val_109 in pairs(v11:GetPlayers()) do
+                if for_key_109 then
+                else 
+                end;
+                if (for_val_109 ~= LocalPlayer_1) then 
+                    if for_val_109.Character then 
+                    end;
+                end;
+                if for_val_109.Character:FindFirstChild("Head") then
+                else 
+                    for_val_109.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_109.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_110, for_val_110 in pairs(v11:GetPlayers()) do
+                if for_key_110 then
+                else 
+                end;
+                if (for_val_110 ~= LocalPlayer_1) then 
+                    if for_val_110.Character then 
+                    end;
+                end;
+                if for_val_110.Character:FindFirstChild("Head") then
+                else 
+                    for_val_110.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_110.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_111, for_val_111 in pairs(v11:GetPlayers()) do
+                if for_key_111 then
+                else 
+                end;
+                if (for_val_111 ~= LocalPlayer_1) then 
+                    if for_val_111.Character then 
+                    end;
+                end;
+                if for_val_111.Character:FindFirstChild("Head") then
+                else 
+                    for_val_111.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_111.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_112, for_val_112 in pairs(v11:GetPlayers()) do
+                if for_key_112 then
+                else 
+                end;
+                if (for_val_112 ~= LocalPlayer_1) then 
+                    if for_val_112.Character then 
+                    end;
+                end;
+                if for_val_112.Character:FindFirstChild("Head") then
+                else 
+                    for_val_112.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_112.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_113, for_val_113 in pairs(v11:GetPlayers()) do
+                if for_key_113 then
+                else 
+                end;
+                if (for_val_113 ~= LocalPlayer_1) then 
+                    if for_val_113.Character then 
+                    end;
+                end;
+                if for_val_113.Character:FindFirstChild("Head") then
+                else 
+                    for_val_113.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_113.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_114, for_val_114 in pairs(v11:GetPlayers()) do
+                if for_key_114 then
+                else 
+                end;
+                if (for_val_114 ~= LocalPlayer_1) then 
+                    if for_val_114.Character then 
+                    end;
+                end;
+                if for_val_114.Character:FindFirstChild("Head") then
+                else 
+                    for_val_114.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_114.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_115, for_val_115 in pairs(v11:GetPlayers()) do
+                if for_key_115 then
+                else 
+                end;
+                if (for_val_115 ~= LocalPlayer_1) then 
+                    if for_val_115.Character then 
+                    end;
+                end;
+                if for_val_115.Character:FindFirstChild("Head") then
+                else 
+                    for_val_115.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_115.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_116, for_val_116 in pairs(v11:GetPlayers()) do
+                if for_key_116 then
+                else 
+                end;
+                if (for_val_116 ~= LocalPlayer_1) then 
+                    if for_val_116.Character then 
+                    end;
+                end;
+                if for_val_116.Character:FindFirstChild("Head") then
+                else 
+                    for_val_116.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_116.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_117, for_val_117 in pairs(v11:GetPlayers()) do
+                if for_key_117 then
+                else 
+                end;
+                if (for_val_117 ~= LocalPlayer_1) then 
+                    if for_val_117.Character then 
+                    end;
+                end;
+                if for_val_117.Character:FindFirstChild("Head") then
+                else 
+                    for_val_117.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_117.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_118, for_val_118 in pairs(v11:GetPlayers()) do
+                if for_key_118 then
+                else 
+                end;
+                if (for_val_118 ~= LocalPlayer_1) then 
+                    if for_val_118.Character then 
+                    end;
+                end;
+                if for_val_118.Character:FindFirstChild("Head") then
+                else 
+                    for_val_118.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_118.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_119, for_val_119 in pairs(v11:GetPlayers()) do
+                if for_key_119 then
+                else 
+                end;
+                if (for_val_119 ~= LocalPlayer_1) then 
+                    if for_val_119.Character then 
+                    end;
+                end;
+                if for_val_119.Character:FindFirstChild("Head") then
+                else 
+                    for_val_119.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_119.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_120, for_val_120 in pairs(v11:GetPlayers()) do
+                if for_key_120 then
+                else 
+                end;
+                if (for_val_120 ~= LocalPlayer_1) then 
+                    if for_val_120.Character then 
+                    end;
+                end;
+                if for_val_120.Character:FindFirstChild("Head") then
+                else 
+                    for_val_120.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_120.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+            for for_key_121, for_val_121 in pairs(v11:GetPlayers()) do
+                if for_key_121 then
+                else 
+                end;
+                if (for_val_121 ~= LocalPlayer_1) then 
+                    if for_val_121.Character then 
+                    end;
+                end;
+                if for_val_121.Character:FindFirstChild("Head") then
+                else 
+                    for_val_121.Character.Head.Size = New_11(3, 3, 3);
+                end;
+                for_val_121.Character.Head.CanCollide = false;
+            end;
+            task.wait(1);
+        end);
+    end;
+end);
+local v161 = Instance.new("Frame", v69);
+v161.BackgroundColor3 = FromRGB_5(11, 14, 21);
+v161.Size = New_4(1, 0, 0, 100);
+v161.BorderSizePixel = 0;
+Instance.new("UICorner", v161).CornerRadius = New_6(0, 4);
+Instance.new("UIStroke", v161).Color = FromRGB_5(20, 26, 35);
+local v172 = Instance.new("TextLabel", v161);
+v172.Size = New_4(1, -20, 0, 30);
+v172.Position = New_4(0, 10, 0, 0);
+v172.Text = "SILENT AIM";
+v172.Font = Enum.Font.GothamBold;
+v172.TextSize = 11;
+v172.TextColor3 = FromRGB_5(200, 200, 200);
+v172.BackgroundTransparency = 1;
+v172.TextXAlignment = 0;
+local v181 = Instance.new("Frame", v161);
+v181.Size = New_4(1, -20, 1, -40);
+v181.Position = New_4(0, 10, 0, 35);
+v181.BackgroundTransparency = 1;
+local v186 = Instance.new("UIListLayout", v181);
+v186.Padding = New_6(0, 12);
+v186:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function(p1_6, p2_6, p3_6, p4_6, p5_6, a_6, b_6, c_6)
+    v161.Size = New_4(
+        1,
+        0,
+        0,
+        v186.AbsoluteContentSize.Y + 50
+    );
+end);
+local v193 = Instance.new("TextButton", v181);
+v193.Size = New_4(1, 0, 0, 24);
+v193.BackgroundTransparency = 1;
+v193.Text = "";
+local v196 = Instance.new("TextLabel", v193);
+v196.Text = "Enable Silent Aim";
+v196.Size = New_4(1, -40, 1, 0);
+v196.TextColor3 = FromRGB_5(130, 135, 145);
+v196.BackgroundTransparency = 1;
+v196.TextXAlignment = 0;
+v196.Font = Enum.Font.GothamMedium;
+v196.TextSize = 13;
+local v203 = Instance.new("Frame", v193);
+v203.Size = New_4(0, 32, 0, 16);
+v203.Position = New_4(1, -32, 0.5, -8);
+v203.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v203.BorderSizePixel = 0;
+Instance.new("UICorner", v203).CornerRadius = New_6(1, 0);
+local v213 = Instance.new("Frame", v203);
+v213.Size = New_4(0, 10, 0, 10);
+v213.Position = New_4(0, 3, 0.5, -5);
+v213.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v213).CornerRadius = New_6(1, 0);
+v193.MouseButton1Click:Connect(function(p1_7, p2_7, p3_7, a_7, b_7, c_7)
+    v981 = New_4(1, -13, 0.5, -5);
+    if v981 then
+    else 
+        v9:Create(v213, New_9(0.2), {
+            ["Position"] = v981
+        }):Play();
+    end;
+    v990 = FromRGB_5(0, 162, 255);
+    if v990 then 
+        v9:Create(v203, New_9(0.2), {
+            ["BackgroundColor3"] = v990
+        }):Play();
+    end;
+    print"[Silent Aim] \208\144\208\186\209\130\208\184\208\178\208\176\209\134\208\184\209\143 \208\178\209\129\208\181\209\133 \208\188\208\181\209\130\208\190\208\180\208\190\208\178...";
+    pcall(function(p1_8, p2_8, p3_8, a_8, b_8, c_8)
+        local v997 = getrawmetatable(game);
+        fenv.setreadonly(v997, false);
+        v997.__namecall = newcclosure(function(a_48, b_48, c_48, ...)
+            if fenv.getnamecallmethod() ~= "FireServer" then 
+            end;
+            return v997.__namecall(a_48, b_48, c_48, ...);
+        end);
+        fenv.setreadonly(v997, true);
+    end);
+    pcall(function(a_9, b_9, c_9)
+        workspace.Raycast = function(p1_49, p2_49, p3_49, p4_49, a_49, b_49, c_49)
+            return workspace.Raycast(p1_49, p2_49, p3_49, p4_49);
+        end;
+    end);
+    pcall(function(p1_10, p2_10, p3_10, p4_10, p5_10, a_10, b_10, c_10)
+        workspace.FindPartOnRay = function(p1_50, p2_50, p3_50, p4_50, p5_50, p6_50, a_50, b_50, c_50)
+            local CurrentCamera_132 = workspace.CurrentCamera;
+            local ViewportSize_133 = CurrentCamera_132.ViewportSize;
+            New_134(
+                ViewportSize_133.X / 2,
+                ViewportSize_133.Y / 2
+            );
+            for for_key_122, for_val_122 in pairs(v11:GetPlayers()) do
+                if for_key_122 then
+                else 
+                end;
+                if for_val_122 ~= LocalPlayer_1 then
+                else 
+                    if for_val_122.Team then 
+                        Team_135 = LocalPlayer_1.Team;
+                        if Team_135 then 
+                        end;
+                    end;
+                end;
+                if for_val_122.Team ~= Team_135 then
+                else 
+                    Character_136 = for_val_122.Character;
+                end;
+                if Character_136 then 
+                    v3033 = Character_136:FindFirstChildOfClass("Humanoid");
+                end;
+                if v3033 then 
+                end;
+                if v3033.Health <= 0 then
+                else 
+                    v3040 = Character_136:FindFirstChild("LowerTorso");
+                end;
+                if v3040 then
+                else 
+                end;
+                New_137 = Ray.new;
+                local CFrame_138 = CurrentCamera_132.CFrame;
+                if workspace:FindPartOnRayWithIgnoreList(New_137(
+                    CFrame_138.Position,
+                    ((
+                        v3040.Position + (
+                            v3040.Velocity * 0.12
+                        )
+                    ) - CFrame_138.Position).Unit * 1e3
+                ), {
+                    Character_139,
+                    CurrentCamera_132
+                }) then 
+                end;
+            end;
+        end;
+    end);
+    pcall(function(a_11, b_11, c_11)
+        local v1013 = getrawmetatable(
+            LocalPlayer_1:GetMouse()
+        );
+        fenv.setreadonly(v1013, false);
+        v1013.__index = newcclosure(function(p1_51, p2_51, p3_51, a_51, b_51, c_51)
+            if (p2_51 == "Hit") then
+            else 
+                CurrentCamera_140 = workspace.CurrentCamera;
+                ViewportSize_141 = CurrentCamera_140.ViewportSize;
+            end;
+            New_134(
+                ViewportSize_141.X / 2,
+                ViewportSize_141.Y / 2
+            );
+            for for_key_123, for_val_123 in pairs(v11:GetPlayers()) do
+                if for_key_123 then
+                else 
+                end;
+                if for_val_123 ~= LocalPlayer_1 then
+                else 
+                    if for_val_123.Team then 
+                    end;
+                end;
+                if for_val_123.Team ~= Team_135 then
+                else 
+                    Character_142 = for_val_123.Character;
+                end;
+                if Character_142 then 
+                    v3082 = Character_142:FindFirstChildOfClass("Humanoid");
+                end;
+                if v3082 then 
+                end;
+                if v3082.Health <= 0 then
+                else 
+                    v3089 = Character_142:FindFirstChild("LowerTorso");
+                end;
+                if v3089 then
+                else 
+                end;
+                local CFrame_143 = CurrentCamera_140.CFrame;
+                if workspace:FindPartOnRayWithIgnoreList(New_137(
+                    CFrame_143.Position,
+                    ((
+                        v3089.Position + (
+                            v3089.Velocity * 0.12
+                        )
+                    ) - CFrame_143.Position).Unit * 1e3
+                ), {
+                    Character_139,
+                    CurrentCamera_140
+                }) then 
+                end;
+            end;
+        end);
+    end);
+    pcall(function(a_12, b_12, c_12)
+        for for_key_1, for_val_1 in pairs(game:GetDescendants()) do
+            if for_key_1 then
+            else 
+            end;
+            if for_val_1:IsA("ModuleScript") then
+            else 
+                v1026 = for_val_1.Name:find("Gun");
+            end;
+            if v1026 then 
+            end;
+            if not v1026 then 
+            end;
+        end;
+    end);
+    print"[Silent Aim] \208\146\209\129\208\181 \208\188\208\181\209\130\208\190\208\180\209\139 \208\176\208\186\209\130\208\184\208\178\208\184\209\128\208\190\208\178\208\176\208\189\209\139";
+end);
+local v226 = Instance.new("Frame", v181);
+v226.Size = New_4(1, 0, 0, 30);
+v226.BackgroundTransparency = 1;
+local v229 = Instance.new("TextLabel", v226);
+v229.Text = "Method:";
+v229.Size = New_4(0.5, 0, 1, 0);
+v229.TextColor3 = FromRGB_5(130, 135, 145);
+v229.BackgroundTransparency = 1;
+v229.TextXAlignment = 0;
+v229.Font = Enum.Font.GothamMedium;
+v229.TextSize = 13;
+local v236 = Instance.new("TextButton", v226);
+v236.Text = "Raycast";
+v236.Size = New_4(0.5, 0, 1, 0);
+v236.Position = New_4(0.5, 0, 0, 0);
+v236.TextColor3 = FromRGB_5(0, 162, 255);
+v236.BackgroundTransparency = 1;
+v236.TextXAlignment = 2;
+v236.MouseButton1Click:Connect(function(p1_13, p2_13, a_13, b_13, c_13)
+    v236.Text = "RemoteEvent";
+end);
+local v246 = Instance.new("Frame", v181);
+v246.Size = New_4(1, 0, 0, 40);
+v246.BackgroundTransparency = 1;
+local v249 = Instance.new("TextLabel", v246);
+v249.Text = "Hit Chance %";
+v249.Size = New_4(0.6, 0, 1, 0);
+v249.TextColor3 = FromRGB_5(130, 135, 145);
+v249.BackgroundTransparency = 1;
+v249.TextXAlignment = 0;
+v249.Font = Enum.Font.GothamMedium;
+v249.TextSize = 13;
+local v256 = Instance.new("TextLabel", v246);
+v256.Text = "100";
+v256.Size = New_4(0.2, 0, 1, 0);
+v256.Position = New_4(0.8, 0, 0, 0);
+v256.TextColor3 = FromRGB_5(0, 162, 255);
+v256.BackgroundTransparency = 1;
+v256.TextXAlignment = 2;
+v256.Font = Enum.Font.GothamMedium;
+v256.TextSize = 13;
+local v265 = Instance.new("Frame", v246);
+v265.Size = New_4(0.7, 0, 0, 6);
+v265.Position = New_4(0, 0, 1, -8);
+v265.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v265.BorderSizePixel = 0;
+Instance.new("UICorner", v265).CornerRadius = New_6(1, 0);
+local v275 = Instance.new("Frame", v265);
+v275.Size = New_4(1, 0, 1, 0);
+v275.BackgroundColor3 = FromRGB_5(0, 162, 255);
+Instance.new("UICorner", v275).CornerRadius = New_6(1, 0);
+v265.InputBegan:Connect(function(input_1, p2_14, a_14, b_14, c_14)
+    if input_1.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+local InputChanged_147 = v7.InputChanged;
+InputChanged_147:Connect(function(input_2, gameProcessedEvent_1, a_15, b_15, c_15)
+end);
+local InputEnded_148 = v7.InputEnded;
+InputEnded_148:Connect(function(input_3, gameProcessedEvent_2, a_16, b_16, c_16)
+    if input_3.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+local v293 = Instance.new("Frame", v181);
+v293.Size = New_4(1, 0, 0, 40);
+v293.BackgroundTransparency = 1;
+local v296 = Instance.new("TextLabel", v293);
+v296.Text = "FOV Radius";
+v296.Size = New_4(0.6, 0, 1, 0);
+v296.TextColor3 = FromRGB_5(130, 135, 145);
+v296.BackgroundTransparency = 1;
+v296.TextXAlignment = 0;
+v296.Font = Enum.Font.GothamMedium;
+v296.TextSize = 13;
+local v303 = Instance.new("TextLabel", v293);
+v303.Text = "250";
+v303.Size = New_4(0.2, 0, 1, 0);
+v303.Position = New_4(0.8, 0, 0, 0);
+v303.TextColor3 = FromRGB_5(0, 162, 255);
+v303.BackgroundTransparency = 1;
+v303.TextXAlignment = 2;
+v303.Font = Enum.Font.GothamMedium;
+v303.TextSize = 13;
+local v312 = Instance.new("Frame", v293);
+v312.Size = New_4(0.7, 0, 0, 6);
+v312.Position = New_4(0, 0, 1, -8);
+v312.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v312.BorderSizePixel = 0;
+Instance.new("UICorner", v312).CornerRadius = New_6(1, 0);
+local v322 = Instance.new("Frame", v312);
+v322.Size = New_4(0.4897959183673469, 0, 1, 0);
+v322.BackgroundColor3 = FromRGB_5(0, 162, 255);
+Instance.new("UICorner", v322).CornerRadius = New_6(1, 0);
+v312.InputBegan:Connect(function(input_4, p2_17, a_17, b_17, c_17)
+    if input_4.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+InputChanged_147:Connect(function(input_5, gameProcessedEvent_3, a_18, b_18, c_18) end);
+InputEnded_148:Connect(function(input_6, gameProcessedEvent_4, a_18, b_18, c_18)
+    if input_6.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+local v339 = Instance.new("Frame", v181);
+v339.Size = New_4(1, 0, 0, 40);
+v339.BackgroundTransparency = 1;
+local v342 = Instance.new("TextLabel", v339);
+v342.Text = "Smoothing";
+v342.Size = New_4(0.6, 0, 1, 0);
+v342.TextColor3 = FromRGB_5(130, 135, 145);
+v342.BackgroundTransparency = 1;
+v342.TextXAlignment = 0;
+v342.Font = Enum.Font.GothamMedium;
+v342.TextSize = 13;
+local v349 = Instance.new("TextLabel", v339);
+v349.Text = "0";
+v349.Size = New_4(0.2, 0, 1, 0);
+v349.Position = New_4(0.8, 0, 0, 0);
+v349.TextColor3 = FromRGB_5(0, 162, 255);
+v349.BackgroundTransparency = 1;
+v349.TextXAlignment = 2;
+v349.Font = Enum.Font.GothamMedium;
+v349.TextSize = 13;
+local v358 = Instance.new("Frame", v339);
+v358.Size = New_4(0.7, 0, 0, 6);
+v358.Position = New_4(0, 0, 1, -8);
+v358.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v358.BorderSizePixel = 0;
+Instance.new("UICorner", v358).CornerRadius = New_6(1, 0);
+local v368 = Instance.new("Frame", v358);
+v368.Size = New_4(0, 0, 1, 0);
+v368.BackgroundColor3 = FromRGB_5(0, 162, 255);
+Instance.new("UICorner", v368).CornerRadius = New_6(1, 0);
+v358.InputBegan:Connect(function(input_7, p2_19, a_19, b_19, c_19)
+    if input_7.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+InputChanged_147:Connect(function(input_8, gameProcessedEvent_5, a_20, b_20, c_20) end);
+InputEnded_148:Connect(function(input_9, gameProcessedEvent_6, a_20, b_20, c_20)
+    if input_9.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+local v385 = Instance.new("Frame", v181);
+v385.Size = New_4(1, 0, 0, 40);
+v385.BackgroundTransparency = 1;
+local v388 = Instance.new("TextLabel", v385);
+v388.Text = "Prediction";
+v388.Size = New_4(0.6, 0, 1, 0);
+v388.TextColor3 = FromRGB_5(130, 135, 145);
+v388.BackgroundTransparency = 1;
+v388.TextXAlignment = 0;
+v388.Font = Enum.Font.GothamMedium;
+v388.TextSize = 13;
+local v395 = Instance.new("TextLabel", v385);
+v395.Text = "12";
+v395.Size = New_4(0.2, 0, 1, 0);
+v395.Position = New_4(0.8, 0, 0, 0);
+v395.TextColor3 = FromRGB_5(0, 162, 255);
+v395.BackgroundTransparency = 1;
+v395.TextXAlignment = 2;
+v395.Font = Enum.Font.GothamMedium;
+v395.TextSize = 13;
+local v404 = Instance.new("Frame", v385);
+v404.Size = New_4(0.7, 0, 0, 6);
+v404.Position = New_4(0, 0, 1, -8);
+v404.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v404.BorderSizePixel = 0;
+Instance.new("UICorner", v404).CornerRadius = New_6(1, 0);
+local v414 = Instance.new("Frame", v404);
+v414.Size = New_4(0.06, 0, 1, 0);
+v414.BackgroundColor3 = FromRGB_5(0, 162, 255);
+Instance.new("UICorner", v414).CornerRadius = New_6(1, 0);
+v404.InputBegan:Connect(function(input_10, p2_21, a_21, b_21, c_21)
+    if input_10.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+InputChanged_147:Connect(function(input_11, gameProcessedEvent_7, a_22, b_22, c_22) end);
+InputEnded_148:Connect(function(input_12, gameProcessedEvent_8, a_22, b_22, c_22)
+    if input_12.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+local v431 = Instance.new("Frame", v181);
+v431.Size = New_4(1, 0, 0, 30);
+v431.BackgroundTransparency = 1;
+local v434 = Instance.new("TextLabel", v431);
+v434.Text = "Target Part:";
+v434.Size = New_4(0.5, 0, 1, 0);
+v434.TextColor3 = FromRGB_5(130, 135, 145);
+v434.BackgroundTransparency = 1;
+v434.TextXAlignment = 0;
+v434.Font = Enum.Font.GothamMedium;
+v434.TextSize = 13;
+local v441 = Instance.new("TextButton", v431);
+v441.Text = "Head";
+v441.Size = New_4(0.5, 0, 1, 0);
+v441.Position = New_4(0.5, 0, 0, 0);
+v441.TextColor3 = FromRGB_5(0, 162, 255);
+v441.BackgroundTransparency = 1;
+v441.TextXAlignment = 2;
+local v448 = Instance.new("Frame", v431);
+v448.Size = New_4(0.5, 0, 0, 100);
+v448.Position = New_4(0.5, 0, 1, 0);
+v448.BackgroundColor3 = FromRGB_5(11, 14, 21);
+v448.Visible = false;
+Instance.new("UICorner", v448).CornerRadius = New_6(0, 4);
+Instance.new("UIStroke", v448).Color = FromRGB_5(20, 26, 35);
+local v461 = Instance.new("TextButton", v448);
+v461.Size = New_4(1, 0, 0, 25);
+v461.Position = New_4(0, 0, 0, 0);
+v461.Text = "Head";
+v461.TextColor3 = FromRGB_5(200, 200, 200);
+v461.BackgroundTransparency = 1;
+v461.MouseButton1Click:Connect(function(a_23, b_23, c_23)
+    v441.Text = "Head";
+    v448.Visible = false;
+end);
+local v471 = Instance.new("TextButton", v448);
+v471.Size = New_4(1, 0, 0, 25);
+v471.Position = New_4(0, 0, 0, 25);
+v471.Text = "UpperTorso";
+v471.TextColor3 = FromRGB_5(200, 200, 200);
+v471.BackgroundTransparency = 1;
+v471.MouseButton1Click:Connect(function(a_24, b_24, c_24)
+    v441.Text = "UpperTorso";
+    v448.Visible = false;
+end);
+local v481 = Instance.new("TextButton", v448);
+v481.Size = New_4(1, 0, 0, 25);
+v481.Position = New_4(0, 0, 0, 50);
+v481.Text = "HumanoidRootPart";
+v481.TextColor3 = FromRGB_5(200, 200, 200);
+v481.BackgroundTransparency = 1;
+v481.MouseButton1Click:Connect(function(a_25, b_25, c_25)
+    v441.Text = "HumanoidRootPart";
+    v448.Visible = false;
+end);
+local v491 = Instance.new("TextButton", v448);
+v491.Size = New_4(1, 0, 0, 25);
+v491.Position = New_4(0, 0, 0, 75);
+v491.Text = "LowerTorso";
+v491.TextColor3 = FromRGB_5(200, 200, 200);
+v491.BackgroundTransparency = 1;
+v491.MouseButton1Click:Connect(function(a_26, b_26, c_26)
+    v441.Text = "LowerTorso";
+    v448.Visible = false;
+end);
+v441.MouseButton1Click:Connect(function(p1_27, p2_27, p3_27, p4_27, p5_27, a_27, b_27, c_27)
+    v448.Visible = true;
+end);
+local v504 = Instance.new("TextButton", v181);
+v504.Size = New_4(1, 0, 0, 24);
+v504.BackgroundTransparency = 1;
+v504.Text = "";
+local v507 = Instance.new("TextLabel", v504);
+v507.Text = "Team Check";
+v507.Size = New_4(1, -40, 1, 0);
+v507.TextColor3 = FromRGB_5(130, 135, 145);
+v507.BackgroundTransparency = 1;
+v507.TextXAlignment = 0;
+v507.Font = Enum.Font.GothamMedium;
+v507.TextSize = 13;
+local v514 = Instance.new("Frame", v504);
+v514.Size = New_4(0, 32, 0, 16);
+v514.Position = New_4(1, -32, 0.5, -8);
+v514.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v514.BorderSizePixel = 0;
+Instance.new("UICorner", v514).CornerRadius = New_6(1, 0);
+local v524 = Instance.new("Frame", v514);
+v524.Size = New_4(0, 10, 0, 10);
+v524.Position = New_4(0, 3, 0.5, -5);
+v524.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v524).CornerRadius = New_6(1, 0);
+v504.MouseButton1Click:Connect(function(p1_28, p2_28, p3_28, a_28, b_28, c_28)
+    v1080 = New_4(1, -13, 0.5, -5);
+    if v1080 then
+    else 
+        v9:Create(v524, New_9(0.2), {
+            ["Position"] = v1080
+        }):Play();
+    end;
+    v1089 = FromRGB_5(0, 162, 255);
+    if v1089 then 
+        v9:Create(v514, New_9(0.2), {
+            ["BackgroundColor3"] = v1089
+        }):Play();
+    end;
+end);
+local v537 = Instance.new("TextButton", v181);
+v537.Size = New_4(1, 0, 0, 24);
+v537.BackgroundTransparency = 1;
+v537.Text = "";
+local v540 = Instance.new("TextLabel", v537);
+v540.Text = "Visible Check";
+v540.Size = New_4(1, -40, 1, 0);
+v540.TextColor3 = FromRGB_5(130, 135, 145);
+v540.BackgroundTransparency = 1;
+v540.TextXAlignment = 0;
+v540.Font = Enum.Font.GothamMedium;
+v540.TextSize = 13;
+local v547 = Instance.new("Frame", v537);
+v547.Size = New_4(0, 32, 0, 16);
+v547.Position = New_4(1, -32, 0.5, -8);
+v547.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v547.BorderSizePixel = 0;
+Instance.new("UICorner", v547).CornerRadius = New_6(1, 0);
+local v557 = Instance.new("Frame", v547);
+v557.Size = New_4(0, 10, 0, 10);
+v557.Position = New_4(0, 3, 0.5, -5);
+v557.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v557).CornerRadius = New_6(1, 0);
+v537.MouseButton1Click:Connect(function(p1_29, p2_29, p3_29, a_29, b_29, c_29)
+    v1099 = New_4(1, -13, 0.5, -5);
+    if v1099 then
+    else 
+        v9:Create(v557, New_9(0.2), {
+            ["Position"] = v1099
+        }):Play();
+    end;
+    v1108 = FromRGB_5(0, 162, 255);
+    if v1108 then 
+        v9:Create(v547, New_9(0.2), {
+            ["BackgroundColor3"] = v1108
+        }):Play();
+    end;
+end);
+local v570 = Instance.new("TextButton", v181);
+v570.Size = New_4(1, 0, 0, 24);
+v570.BackgroundTransparency = 1;
+v570.Text = "";
+local v573 = Instance.new("TextLabel", v570);
+v573.Text = "Auto Fire";
+v573.Size = New_4(1, -40, 1, 0);
+v573.TextColor3 = FromRGB_5(130, 135, 145);
+v573.BackgroundTransparency = 1;
+v573.TextXAlignment = 0;
+v573.Font = Enum.Font.GothamMedium;
+v573.TextSize = 13;
+local v580 = Instance.new("Frame", v570);
+v580.Size = New_4(0, 32, 0, 16);
+v580.Position = New_4(1, -32, 0.5, -8);
+v580.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v580.BorderSizePixel = 0;
+Instance.new("UICorner", v580).CornerRadius = New_6(1, 0);
+local v590 = Instance.new("Frame", v580);
+v590.Size = New_4(0, 10, 0, 10);
+v590.Position = New_4(0, 3, 0.5, -5);
+v590.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v590).CornerRadius = New_6(1, 0);
+v570.MouseButton1Click:Connect(function(p1_30, p2_30, p3_30, a_30, b_30, c_30)
+    v1118 = New_4(1, -13, 0.5, -5);
+    if v1118 then
+    else 
+        v9:Create(v590, New_9(0.2), {
+            ["Position"] = v1118
+        }):Play();
+    end;
+    v1127 = FromRGB_5(0, 162, 255);
+    if v1127 then 
+        v9:Create(v580, New_9(0.2), {
+            ["BackgroundColor3"] = v1127
+        }):Play();
+    end;
+    task.spawn(function()
+        local CurrentCamera_160 = workspace.CurrentCamera;
+        local ViewportSize_161 = CurrentCamera_160.ViewportSize;
+        New_134(
+            ViewportSize_161.X / 2,
+            ViewportSize_161.Y / 2
+        );
+        for for_key_124, for_val_124 in pairs(v11:GetPlayers()) do
+            if for_key_124 then
+            else 
+            end;
+            if for_val_124 ~= LocalPlayer_1 then
+            else 
+                if for_val_124.Team then 
+                end;
+            end;
+            if for_val_124.Team ~= Team_135 then
+            else 
+                Character_162 = for_val_124.Character;
+            end;
+            if Character_162 then 
+                v3130 = Character_162:FindFirstChildOfClass("Humanoid");
+            end;
+            if v3130 then 
+            end;
+            if v3130.Health <= 0 then
+            else 
+                v3137 = Character_162:FindFirstChild("LowerTorso");
+            end;
+            if v3137 then
+            else 
+            end;
+            local CFrame_163 = CurrentCamera_160.CFrame;
+            if workspace:FindPartOnRayWithIgnoreList(New_137(
+                CFrame_163.Position,
+                ((
+                    v3137.Position + (
+                        v3137.Velocity * 0.12
+                    )
+                ) - CFrame_163.Position).Unit * 1e3
+            ), {
+                Character_139,
+                CurrentCamera_160
+            }) then 
+            end;
+        end;
+    end);
+end);
+local v605 = fenv.Drawing.new"Circle";
+v605.Visible = false;
+local New_164 = Color3.new;
+v605.Color = New_164(1, 0, 0);
+v605.Thickness = 1;
+v605.NumSides = 64;
+v605.Radius = 250;
+v605.Filled = false;
+local RenderStepped_165 = v13.RenderStepped;
+RenderStepped_165:Connect(function(deltaTime, a_31, b_31, c_31)
+    New_134 = Vector2.new;
+    v605.Position = New_134(
+        workspace.CurrentCamera.ViewportSize.X / 2,
+        workspace.CurrentCamera.ViewportSize.Y / 2
+    );
+end);
+v611 = Instance.new("Frame", v61);
+v611.Size = New_4(1, 0, 1, 0);
+v611.Visible = false;
+v611.BackgroundTransparency = 1;
+local v614 = Instance.new("ScrollingFrame", v611);
+v614.Size = New_4(0.5, -12, 1, 0);
+v614.BackgroundTransparency = 1;
+v614.ScrollBarThickness = 0;
+local v617 = Instance.new("ScrollingFrame", v611);
+v617.Size = New_4(0.5, -12, 1, 0);
+v617.Position = New_4(0.5, 12, 0, 0);
+v617.BackgroundTransparency = 1;
+v617.ScrollBarThickness = 0;
+Instance.new("UIListLayout", v614).Padding = New_6(0, 20);
+Instance.new("UIListLayout", v617).Padding = New_6(0, 20);
+v628 = Instance.new("TextButton", v51);
+v628.Size = New_4(0, 46, 0, 46);
+v628.BackgroundTransparency = 1;
+v628.Text = "\240\159\145\129\239\184\143";
+v628.Font = Enum.Font.GothamBold;
+v628.TextSize = 24;
+v628.TextColor3 = FromRGB_5(60, 65, 75);
+v628.MouseButton1Click:Connect(function(a_32, b_32, c_32)
+    v611.Visible = false;
+    v628.TextColor3 = FromRGB_5(60, 65, 75);
+    v736.Visible = false;
+    v753.TextColor3 = FromRGB_5(60, 65, 75);
+    v66.Visible = false;
+    v83.TextColor3 = FromRGB_5(60, 65, 75);
+    v611.Visible = true;
+    v628.TextColor3 = FromRGB_5(0, 162, 255);
+end);
+local v638 = Instance.new("Frame", v614);
+v638.BackgroundColor3 = FromRGB_5(11, 14, 21);
+v638.Size = New_4(1, 0, 0, 100);
+v638.BorderSizePixel = 0;
+Instance.new("UICorner", v638).CornerRadius = New_6(0, 4);
+Instance.new("UIStroke", v638).Color = FromRGB_5(20, 26, 35);
+local v649 = Instance.new("TextLabel", v638);
+v649.Size = New_4(1, -20, 0, 30);
+v649.Position = New_4(0, 10, 0, 0);
+v649.Text = "ESP PLAYER";
+v649.Font = Enum.Font.GothamBold;
+v649.TextSize = 11;
+v649.TextColor3 = FromRGB_5(200, 200, 200);
+v649.BackgroundTransparency = 1;
+v649.TextXAlignment = 0;
+local v658 = Instance.new("Frame", v638);
+v658.Size = New_4(1, -20, 1, -40);
+v658.Position = New_4(0, 10, 0, 35);
+v658.BackgroundTransparency = 1;
+local v663 = Instance.new("UIListLayout", v658);
+v663.Padding = New_6(0, 12);
+v663:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function(p1_33, p2_33, p3_33, p4_33, p5_33, a_33, b_33, c_33)
+    v638.Size = New_4(
+        1,
+        0,
+        0,
+        v663.AbsoluteContentSize.Y + 50
+    );
+end);
+local v670 = Instance.new("TextButton", v658);
+v670.Size = New_4(1, 0, 0, 24);
+v670.BackgroundTransparency = 1;
+v670.Text = "";
+local v673 = Instance.new("TextLabel", v670);
+v673.Text = "Box ESP";
+v673.Size = New_4(1, -40, 1, 0);
+v673.TextColor3 = FromRGB_5(130, 135, 145);
+v673.BackgroundTransparency = 1;
+v673.TextXAlignment = 0;
+v673.Font = Enum.Font.GothamMedium;
+v673.TextSize = 13;
+local v680 = Instance.new("Frame", v670);
+v680.Size = New_4(0, 32, 0, 16);
+v680.Position = New_4(1, -32, 0.5, -8);
+v680.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v680.BorderSizePixel = 0;
+Instance.new("UICorner", v680).CornerRadius = New_6(1, 0);
+local v690 = Instance.new("Frame", v680);
+v690.Size = New_4(0, 10, 0, 10);
+v690.Position = New_4(0, 3, 0.5, -5);
+v690.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v690).CornerRadius = New_6(1, 0);
+v670.MouseButton1Click:Connect(function(p1_34, p2_34, p3_34, a_34, b_34, c_34)
+    v1162 = New_4(1, -13, 0.5, -5);
+    if v1162 then
+    else 
+        v9:Create(v690, New_9(0.2), {
+            ["Position"] = v1162
+        }):Play();
+    end;
+    v1171 = FromRGB_5(0, 162, 255);
+    if v1171 then 
+        v9:Create(v680, New_9(0.2), {
+            ["BackgroundColor3"] = v1171
+        }):Play();
+    end;
+end);
+local v703 = Instance.new("TextButton", v658);
+v703.Size = New_4(1, 0, 0, 24);
+v703.BackgroundTransparency = 1;
+v703.Text = "";
+local v706 = Instance.new("TextLabel", v703);
+v706.Text = "Tracers";
+v706.Size = New_4(1, -40, 1, 0);
+v706.TextColor3 = FromRGB_5(130, 135, 145);
+v706.BackgroundTransparency = 1;
+v706.TextXAlignment = 0;
+v706.Font = Enum.Font.GothamMedium;
+v706.TextSize = 13;
+local v713 = Instance.new("Frame", v703);
+v713.Size = New_4(0, 32, 0, 16);
+v713.Position = New_4(1, -32, 0.5, -8);
+v713.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v713.BorderSizePixel = 0;
+Instance.new("UICorner", v713).CornerRadius = New_6(1, 0);
+local v723 = Instance.new("Frame", v713);
+v723.Size = New_4(0, 10, 0, 10);
+v723.Position = New_4(0, 3, 0.5, -5);
+v723.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v723).CornerRadius = New_6(1, 0);
+v703.MouseButton1Click:Connect(function(p1_35, p2_35, p3_35, a_35, b_35, c_35)
+    v1181 = New_4(1, -13, 0.5, -5);
+    if v1181 then
+    else 
+        v9:Create(v723, New_9(0.2), {
+            ["Position"] = v1181
+        }):Play();
+    end;
+    v1190 = FromRGB_5(0, 162, 255);
+    if v1190 then 
+        v9:Create(v713, New_9(0.2), {
+            ["BackgroundColor3"] = v1190
+        }):Play();
+    end;
+end);
+v736 = Instance.new("Frame", v61);
+v736.Size = New_4(1, 0, 1, 0);
+v736.Visible = false;
+v736.BackgroundTransparency = 1;
+local v739 = Instance.new("ScrollingFrame", v736);
+v739.Size = New_4(0.5, -12, 1, 0);
+v739.BackgroundTransparency = 1;
+v739.ScrollBarThickness = 0;
+local v742 = Instance.new("ScrollingFrame", v736);
+v742.Size = New_4(0.5, -12, 1, 0);
+v742.Position = New_4(0.5, 12, 0, 0);
+v742.BackgroundTransparency = 1;
+v742.ScrollBarThickness = 0;
+Instance.new("UIListLayout", v739).Padding = New_6(0, 20);
+Instance.new("UIListLayout", v742).Padding = New_6(0, 20);
+v753 = Instance.new("TextButton", v51);
+v753.Size = New_4(0, 46, 0, 46);
+v753.BackgroundTransparency = 1;
+v753.Text = "\226\154\153\239\184\143";
+v753.Font = Enum.Font.GothamBold;
+v753.TextSize = 24;
+v753.TextColor3 = FromRGB_5(60, 65, 75);
+v753.MouseButton1Click:Connect(function(a_36, b_36, c_36)
+    v611.Visible = false;
+    v628.TextColor3 = FromRGB_5(60, 65, 75);
+    v736.Visible = false;
+    v753.TextColor3 = FromRGB_5(60, 65, 75);
+    v66.Visible = false;
+    v83.TextColor3 = FromRGB_5(60, 65, 75);
+    v736.Visible = true;
+    v753.TextColor3 = FromRGB_5(0, 162, 255);
+end);
+local v763 = Instance.new("Frame", v739);
+v763.BackgroundColor3 = FromRGB_5(11, 14, 21);
+v763.Size = New_4(1, 0, 0, 100);
+v763.BorderSizePixel = 0;
+Instance.new("UICorner", v763).CornerRadius = New_6(0, 4);
+Instance.new("UIStroke", v763).Color = FromRGB_5(20, 26, 35);
+local v774 = Instance.new("TextLabel", v763);
+v774.Size = New_4(1, -20, 0, 30);
+v774.Position = New_4(0, 10, 0, 0);
+v774.Text = "MOVEMENT";
+v774.Font = Enum.Font.GothamBold;
+v774.TextSize = 11;
+v774.TextColor3 = FromRGB_5(200, 200, 200);
+v774.BackgroundTransparency = 1;
+v774.TextXAlignment = 0;
+local v783 = Instance.new("Frame", v763);
+v783.Size = New_4(1, -20, 1, -40);
+v783.Position = New_4(0, 10, 0, 35);
+v783.BackgroundTransparency = 1;
+local v788 = Instance.new("UIListLayout", v783);
+v788.Padding = New_6(0, 12);
+v788:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function(p1_37, p2_37, p3_37, p4_37, p5_37, a_37, b_37, c_37)
+    v763.Size = New_4(
+        1,
+        0,
+        0,
+        v788.AbsoluteContentSize.Y + 50
+    );
+end);
+local v795 = Instance.new("TextButton", v783);
+v795.Size = New_4(1, 0, 0, 24);
+v795.BackgroundTransparency = 1;
+v795.Text = "";
+local v798 = Instance.new("TextLabel", v795);
+v798.Text = "Fly";
+v798.Size = New_4(1, -40, 1, 0);
+v798.TextColor3 = FromRGB_5(130, 135, 145);
+v798.BackgroundTransparency = 1;
+v798.TextXAlignment = 0;
+v798.Font = Enum.Font.GothamMedium;
+v798.TextSize = 13;
+local v805 = Instance.new("Frame", v795);
+v805.Size = New_4(0, 32, 0, 16);
+v805.Position = New_4(1, -32, 0.5, -8);
+v805.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v805.BorderSizePixel = 0;
+Instance.new("UICorner", v805).CornerRadius = New_6(1, 0);
+local v815 = Instance.new("Frame", v805);
+v815.Size = New_4(0, 10, 0, 10);
+v815.Position = New_4(0, 3, 0.5, -5);
+v815.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v815).CornerRadius = New_6(1, 0);
+v795.MouseButton1Click:Connect(function(p1_38, p2_38, p3_38, a_38, b_38, c_38)
+    v1213 = New_4(1, -13, 0.5, -5);
+    if v1213 then
+    else 
+        v9:Create(v815, New_9(0.2), {
+            ["Position"] = v1213
+        }):Play();
+    end;
+    v1222 = FromRGB_5(0, 162, 255);
+    if v1222 then 
+        v9:Create(v805, New_9(0.2), {
+            ["BackgroundColor3"] = v1222
+        }):Play();
+    end;
+    Character_139 = LocalPlayer_1.Character;
+    Instance.new("BodyVelocity", Character_139.HumanoidRootPart);
+end);
+local v828 = Instance.new("TextButton", v783);
+v828.Size = New_4(1, 0, 0, 24);
+v828.BackgroundTransparency = 1;
+v828.Text = "";
+local v831 = Instance.new("TextLabel", v828);
+v831.Text = "NoClip";
+v831.Size = New_4(1, -40, 1, 0);
+v831.TextColor3 = FromRGB_5(130, 135, 145);
+v831.BackgroundTransparency = 1;
+v831.TextXAlignment = 0;
+v831.Font = Enum.Font.GothamMedium;
+v831.TextSize = 13;
+local v838 = Instance.new("Frame", v828);
+v838.Size = New_4(0, 32, 0, 16);
+v838.Position = New_4(1, -32, 0.5, -8);
+v838.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v838.BorderSizePixel = 0;
+Instance.new("UICorner", v838).CornerRadius = New_6(1, 0);
+local v848 = Instance.new("Frame", v838);
+v848.Size = New_4(0, 10, 0, 10);
+v848.Position = New_4(0, 3, 0.5, -5);
+v848.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v848).CornerRadius = New_6(1, 0);
+v828.MouseButton1Click:Connect(function(p1_39, p2_39, p3_39, a_39, b_39, c_39)
+    v1234 = New_4(1, -13, 0.5, -5);
+    if v1234 then
+    else 
+        v9:Create(v848, New_9(0.2), {
+            ["Position"] = v1234
+        }):Play();
+    end;
+    v1243 = FromRGB_5(0, 162, 255);
+    if v1243 then 
+        v9:Create(v838, New_9(0.2), {
+            ["BackgroundColor3"] = v1243
+        }):Play();
+    end;
+    v13.Stepped:Connect(function(time, a_53, b_53, c_53)
+        if Character_139 then 
+        end;
+        for for_key_125, for_val_125 in pairs(Character_139:GetDescendants()) do
+            if for_key_125 then
+            else 
+            end;
+            if for_val_125:IsA("BasePart") then
+            else 
+                for_val_125.CanCollide = false;
+            end;
+        end;
+    end);
+end);
+local v861 = Instance.new("TextButton", v783);
+v861.Size = New_4(1, 0, 0, 24);
+v861.BackgroundTransparency = 1;
+v861.Text = "";
+local v864 = Instance.new("TextLabel", v861);
+v864.Text = "Inf Jump";
+v864.Size = New_4(1, -40, 1, 0);
+v864.TextColor3 = FromRGB_5(130, 135, 145);
+v864.BackgroundTransparency = 1;
+v864.TextXAlignment = 0;
+v864.Font = Enum.Font.GothamMedium;
+v864.TextSize = 13;
+local v871 = Instance.new("Frame", v861);
+v871.Size = New_4(0, 32, 0, 16);
+v871.Position = New_4(1, -32, 0.5, -8);
+v871.BackgroundColor3 = FromRGB_5(25, 30, 40);
+v871.BorderSizePixel = 0;
+Instance.new("UICorner", v871).CornerRadius = New_6(1, 0);
+local v881 = Instance.new("Frame", v871);
+v881.Size = New_4(0, 10, 0, 10);
+v881.Position = New_4(0, 3, 0.5, -5);
+v881.BackgroundColor3 = FromRGB_5(180, 185, 195);
+Instance.new("UICorner", v881).CornerRadius = New_6(1, 0);
+v861.MouseButton1Click:Connect(function(p1_40, p2_40, p3_40, a_40, b_40, c_40)
+    v1256 = New_4(1, -13, 0.5, -5);
+    if v1256 then
+    else 
+        v9:Create(v881, New_9(0.2), {
+            ["Position"] = v1256
+        }):Play();
+    end;
+    v1265 = FromRGB_5(0, 162, 255);
+    if v1265 then 
+        v9:Create(v871, New_9(0.2), {
+            ["BackgroundColor3"] = v1265
+        }):Play();
+    end;
+end);
+v7.JumpRequest:Connect(function(a_41, b_41, c_41)
+    Character_139:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping");
+end);
+for for_key_0, for_val_0 in pairs(v11:GetPlayers()) do
+    if for_key_0 then
+    else 
+    end;
+    if (for_val_0 ~= LocalPlayer_1) then 
+        v902 = fenv.Drawing.new"Square";
+    end;
+    v902.Visible = false;
+    v902.Thickness = 1;
+    v902.Color = New_164(1, 1, 1);
+    local v907 = fenv.Drawing.new"Line";
+    v907.Visible = false;
+    v907.Thickness = 1;
+    v907.Color = FromRGB_5(0, 162, 255);
+    RenderStepped_165:Connect(function(deltaTime_1, p2_42, p3_42, a_42, b_42, c_42)
+        if for_val_0.Character then
+        else 
+        end;
+        if for_val_0.Character:FindFirstChild("HumanoidRootPart") then
+        else 
+            workspace.CurrentCamera:WorldToViewportPoint(for_val_0.Character.HumanoidRootPart.Position);
+        end;
+    end);
+end;
+v11.PlayerAdded:Connect(function(player, p2_43, p3_43, p4_43, p5_43, p6_43, a_43, b_43, c_43)
+    local v1291 = fenv.Drawing.new"Square";
+    v1291.Visible = false;
+    v1291.Thickness = 1;
+    v1291.Color = New_164(1, 1, 1);
+    local v1296 = fenv.Drawing.new"Line";
+    v1296.Visible = false;
+    v1296.Thickness = 1;
+    v1296.Color = FromRGB_5(0, 162, 255);
+    RenderStepped_165:Connect(function(deltaTime_2, p2_54, p3_54, a_54, b_54, c_54)
+        if player.Character then
+        else 
+        end;
+        if player.Character:FindFirstChild("HumanoidRootPart") then
+        else 
+            workspace.CurrentCamera:WorldToViewportPoint(player.Character.HumanoidRootPart.Position);
+        end;
+    end);
+end);
+v26.InputBegan:Connect(function(input_13, p2_44, a_44, b_44, c_44)
+    if input_13.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+InputChanged_147:Connect(function(input_14, gameProcessedEvent_9, a_45, b_45, c_45)
+    v1311 = (input_14.UserInputType == Enum.UserInputType.MouseMovement);
+    if not v1311 then 
+    end;
+    if not v1311 then 
+    end;
+end);
+InputEnded_148:Connect(function(input_15, a_46, b_46, c_46)
+    if input_15.UserInputType ~= Enum.UserInputType.MouseButton1 then 
+    end;
+end);
+v66.Visible = true;
+v83.TextColor3 = FromRGB_5(0, 162, 255);
+print"[Neverlose Ultimate 2025] \208\151\208\176\208\179\209\128\209\131\208\182\208\181\208\189\208\190 \209\131\209\129\208\191\208\181\209\136\208\189\208\190!";
+print"INSERT - \209\129\208\186\209\128\209\139\209\130\209\140/\208\191\208\190\208\186\208\176\208\183\208\176\209\130\209\140 GUI";
+print"Silent Aim \208\184\209\129\208\191\208\190\208\187\209\140\208\183\209\131\208\181\209\130 5 \208\188\208\181\209\130\208\190\208\180\208\190\208\178 \209\133\209\131\208\186\208\190\208\178";
+print"\208\161\208\188\208\181\208\189\208\184\209\130\208\181 \208\188\208\181\209\130\208\190\208\180 \208\181\209\129\208\187\208\184 \208\189\208\181 \209\128\208\176\208\177\208\190\209\130\208\176\208\181\209\130";
